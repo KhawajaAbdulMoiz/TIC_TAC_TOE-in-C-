@@ -8,14 +8,15 @@ public:
     float cal;
 
     virtual void processPayment() {
-        cout << "Payment Processed" << endl;
+        cout << "Payment Processed Successfully" << endl;
     };
 };
 
 class CreditCard : public Payment {
 public:
     void processPayment() override {
-        cout << "Credit Card" << endl;
+        cout << "Credit Card";
+        cout << endl;
         cout << "Enter PayAmount" << endl;
         cin >> pay_amount;
         cal = 2.0 / 100.0;
